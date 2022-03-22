@@ -1,3 +1,6 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
 /* =================== RESET CSS =================== */
 :root {
 	/* .5rem = 8px; 1rem = 16px; 1.5rem = 24px */
@@ -48,8 +51,9 @@
 	--z-tooltip: 10;
 	--z-fixed: 100;
 	--z-modal: 1000;
-
+    /* =================== swiper custom =================== */
 }
+
 
 @media screen and (min-width: 968px) {
 	:root {
@@ -337,6 +341,7 @@ table {
     padding: 1rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
+    cursor: pointer;
 }
 
 .button:hover{
@@ -353,11 +358,44 @@ table {
     display: inline-flex;
     align-items: center;
 }
-
-
-
-
 /* =================== ABOUT =================== */
+.about__img{
+    width: 220px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.about__description{
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about__info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about__info-title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+.about__info-name{
+    font-size: var(--smaller-font-size);
+}
+.about__info-title,
+.about__info-name{
+    display: block;
+    text-align: center;
+}
+
+.about__button{
+    display: flex;
+    justify-content: center;
+}
 /* =================== SERVICES =================== */
 /* =================== QUALIFICATIONS =================== */
 /* =================== PROJECTS =================== */
@@ -370,14 +408,9 @@ table {
 }
 
 .projects-img{
-    width: 265px;
     border-radius: .5rem;
     justify-self: center;
-}
-
-.project-tile{
-    font-size: var(--h3-font-size);
-    margin-bottom: var(--mb-0-5);
+    box-shadow: 2px 2px 2px 2px rgba(190, 189, 189, 0.2);
 }
 
 .block__caption {
@@ -406,10 +439,18 @@ table {
 
 .projects__description{
     margin-bottom: var(--mb-0-75);
+    text-align: justify;
+    hyphens: auto;
 }
 
 .projects__button:hover .button__icon{
     transform: translateX(.25rem);
+}
+
+/* =================== SWIPER SLIDE =================== */
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    /* display: none; */
 }
 
 .swiper-projects-icon{
@@ -417,8 +458,21 @@ table {
     color: var(--first-color);
 }
 
+.swiper-button-prev{
+    left: -.5rem;
+}
+
+swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: 2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--first-color);
+}
+
 .swiper-button-next,
 .swiper-button-prev,
-.swiper-pagination{
+.swiper-pagination-bullet{
     outline: none;
 }
