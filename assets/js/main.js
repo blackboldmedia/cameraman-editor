@@ -32,6 +32,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 let swiper = new Swiper(".projects__container", {
     cssMode: true,
     loop: true,
+
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
