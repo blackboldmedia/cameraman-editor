@@ -324,25 +324,25 @@
 
             <div class="qualification__container container">
                 <div class="qualification__tabs">
-                    <div class="qualification__button button--flex">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
                         <i class="uil uil-graduation-cap qualification__icon"></i>
                         Education
                     </div>
 
-                    <div class="qualification__button button--flex">
+                    <div class="qualification__button button--flex" data-target="#work">
                         <i class="uil uil-briefcase-alt qualification__icon"></i>
                         Work
                     </div>
                 </div>
 
-                <section class="qualification__sections">
+                <div class="qualification__sections">
                     <!-- ================= QUALIFICATION CONTENT 1 =================-->
-                    <div class="qualification__content">
+                    <div class="qualification__content qualification__active" data-content id="education">
                         <!-- ================= QUALIFICATION 1 =================-->
                         <div class="qualification__data">
                             <div>
-                                <h3 class="qualification__title">Software Engineering</h3>
-                                <span class="qualification__subtitle">Can Tho University of Technology</span>
+                                <h3 class="qualification__title">Software Engineer</h3>
+                                <span class="qualification__subtitle">CTUT</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     2014 - 2018
@@ -360,6 +360,11 @@
                             <div></div>
 
                             <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
                                 <h3 class="qualification__title">Entry-Data</h3>
                                 <span class="qualification__subtitle">La Vie Company.Ltd</span>
                                 <div class="qualification__calendar">
@@ -368,10 +373,6 @@
                                 </div>
                             </div>
 
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
                         </div>
 
                         <!-- ================= QUALIFICATION 3 =================-->
@@ -396,6 +397,11 @@
                             <div></div>
 
                             <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
                                 <h3 class="qualification__title">Join the Military</h3>
                                 <span class="qualification__subtitle">Regiment 3</span>
                                 <div class="qualification__calendar">
@@ -403,16 +409,11 @@
                                     2019 - 2021
                                 </div>
                             </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
-                            </div>
                         </div>
                     </div>
 
                     <!-- ================= QUALIFICATION CONTENT 2 =================-->
-                    <div class="qualification__content">
+                    <div class="qualification__content" data-content id="work">
                         <!-- ================= QUALIFICATION 1 =================-->
                         <div class="qualification__data">
                             <div>
@@ -433,6 +434,12 @@
                         <!-- ================= QUALIFICATION 2 =================-->
                         <div class="qualification__data">
                             <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
                             <div>
                                 <h3 class="qualification__title">UX/UI</h3>
                                 <span class="qualification__subtitle">BlackBold - BB</span>
@@ -440,11 +447,6 @@
                                     <i class="uil uil-calendar-alt"></i>
                                     2019 - 2020
                                 </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
                             </div>
                         </div>
 
@@ -464,25 +466,25 @@
                                 <span class="qualification__line"></span>
                             </div>
                         </div>
-
-                        <!-- ================= QUALIFICATION 4 =================-->
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <h3 class="qualification__title">Hacking</h3>
-                                <span class="qualification__subtitle">BlackBold.Ltd</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2021 - 2022
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
-                            </div>
-                        </div>
                     </div>
+            </div>
+        </section>
+        <!-- ================= SERVICES =================-->
+        <section class="services section" id="services">
+            <div class="services__block">
+                <h2 class="section__title">
+                    <span class="block__caption">Services</span>
+                </h2>
+            </div>
+            <span class="section__subtitle">What I offer</span>
+
+            <div class="servives__container container grid">
+                <!-- ================= SERVICES 1=================-->
+                <div class="services__content">
+                    <div>
+
+                    </div>
+                </div>
             </div>
         </section>
         <!-- ================= PORTFOLIO =================-->
@@ -567,9 +569,9 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-        <!-- ================= SERVICES =================-->
     </main>
-        <!-- ================= SWIPER JS =================-->
+    <!-- ================= SWIPER JS =================-->
+
         <script src="assets/js/swiper-bundle.min.js"></script>
         <!-- ================= MAIN JS =================-->
     <script src="assets/js/main.js"></script>
