@@ -588,15 +588,15 @@ table {
     font-weight: var(--font-medium);
     cursor: pointer;
 }
+.qualification__button:hover{
+    color: var(--first-color);
+}
 
 .qualification__icon{
     font-size: 1.8rem;
     margin-right: var(--mb-0-25);
 }
 
-.qualification__button:hover{
-    color: var(--first-color);
-}
 
 .qualification__data{
     display: grid;
@@ -636,90 +636,14 @@ table {
     transform: translate(6px);
 }
 
-.qualification__data{
-
+.qualification [data-content]{
+    display: none;
 }
 
-.qualification__title{
-
+.qualification__active[data-content]{
+    display: block;
 }
 
-.qualification__subtitle{
-
-}
-
-.qualification__calendar{
-
-}
-
-.qualification__rounder{
-
-}
-
-.qualification__line{
-
-}
-
-.qualification__data{
-
-}
-
-.qualification__title{
-
-}
-
-.qualification__subtitle{
-
-}
-
-.qualification__calendar{
-
-}
-
-.qualification__rounder{
-
-}
-
-.qualification__line{
-
-}
-
-.qualification__data{
-
-}
-
-.qualification__title{
-
-}
-
-.qualification__subtitle{
-
-}
-
-.qualification__calendar{
-
-}
-
-.qualification__rounder{
-
-}
-
-.qualification__line{
-
-}
-
-.qualification__data{
-
-}
-
-.qualification__title{
-
-}
-
-.qualification__subtitle{
-
-}
-
-.qualification__calendar{
-
+.qualification__button.qualification__active{
+    color: var(--first-color);
 }
