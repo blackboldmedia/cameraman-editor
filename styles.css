@@ -647,3 +647,7 @@ table {
 .qualification__button.qualification__active{
     color: var(--first-color);
 }
+
+.qualification__data .qualification__left{
+    text-align: end;
+}
