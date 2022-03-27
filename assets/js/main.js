@@ -29,7 +29,7 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /* =================== PROJECTS SWIPER =================== */
-let swiper = new Swiper(".projects__container", {
+let swiperPortfolio = new Swiper(".projects__container", {
     cssMode: true,
     loop: true,
 
@@ -81,5 +81,25 @@ tabs.forEach(tab =>{
         tab.classList.add('qualification__active')
     })
 })
-/*============ MENU HIDDEN ==========*/
+/*============ TESTIMONIAL SWIPER ==========*/
+let swiperTestimonial = new Swiper(".testimonial__container", {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 48,
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+    },
+    breakpoint:{
+        568:{
+            slidesPerView: 2,
+        }
+    }
+});
 
