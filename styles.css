@@ -20,6 +20,7 @@
 	--input-color: hsl(var(--hue-color), 70%, 96%);
 	--body-color: hsl(var(--hue-color), 60%, 99%);
 	--container-color: #FFF;
+    --container-color-grey:#D0D0D0;
 	--scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
 	--scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
@@ -51,8 +52,14 @@
 	--z-tooltip: 10;
 	--z-fixed: 100;
 	--z-modal: 1000;
-    /* =================== swiper custom =================== */
+    /* =================== CSS for selection =================== */
+
 }
+*::selection{
+    color: rgb(233, 231, 231);
+    background-color: var(--first-color-second);
+}
+
 
 
 @media screen and (min-width: 968px) {
@@ -247,9 +254,10 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: var(--small-font-size);
     color: var(--title-color);
-    font-weight: var(--font-medium);
+    font: var(--font-medium) var(--small-font-size);
+    /* font-size: var(--small-font-size);
+    font-weight: var(--font-medium); */
 }
 
 .nav__link:hover{
@@ -365,9 +373,10 @@ table {
 }
 
 .home__scroll-name{
-    font-size: var(--small-font-size);
+    font: var(--small-font-size) var(--font-medium);
+    /* font-size: var(--small-font-size);
+    font-weight: var(--font-medium); */
     color: var(--title-color);
-    font-weight: var(--font-medium);
     margin-right: var(--mb-0-25);
 }
 
@@ -467,8 +476,7 @@ table {
 }
 
 .about__info-title{
-    font-size: var(--h2-font-size);
-    font-weight: var(--font-semi-bold);
+    font: var(--h2-font-size) var(--font-semi-bold);
     color: var(--title-color);
 }
 
@@ -503,8 +511,7 @@ table {
 }
 
 .services__title{
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
+    font: var(--h3-font-size) var(--font-medium);
     margin-bottom: var(--mb-1);
 }
 
@@ -564,8 +571,7 @@ table {
 }
 
 .services__modal-title{
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
+    font: var(--h3-font-size) var(--font-medium);
     margin-bottom: var(--mb-1-5);
 }
 
@@ -606,25 +612,11 @@ table {
     transform: translateX(.25rem);
 }
 
-/* .swiper-container-horizontal > .swiper-pagination-bullets{
-    bottom: -2.5rem;
-} */
 /* =================== SWIPER SLIDE =================== */
 
 .swiper-projects-icon{
     font-size: 2rem;
     color: var(--first-color);
-}
-
-.swiper-container-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal{
-    bottom: 2.5rem;
-}
-
-.swiper-button-next,
-.swiper-button-prev,
-.swiper-pagination-bullet{
-    outline: none;
 }
 
 /* =================== SKILLS =================== */
@@ -657,8 +649,7 @@ table {
 }
 
 .skills__name{
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
+    font: var(--normal-font-size) var(--font-medium);
 }
 .skills__subtitle{
     font-size: var(--small-font-size);
@@ -747,8 +738,7 @@ table {
 }
 
 .qualification__button{
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
+    font: var(--h3-font-size) var(--font-medium);
     cursor: pointer;
 }
 .qualification__button:hover{
@@ -768,8 +758,7 @@ table {
 }
 
 .qualification__title{
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
+    font: var(--normal-font-size) var(--font-medium);
 }
 
 .qualification__subtitle{
