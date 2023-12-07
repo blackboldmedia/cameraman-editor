@@ -1289,9 +1289,8 @@ table {
     top: 0;
     bottom: initial;
   }
-
+  /* .main */
   .header,
-  .main,
   .footer__container {
     padding: 0 1rem;
   }
