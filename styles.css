@@ -397,6 +397,7 @@ table {
   font-size: var(--h3-font-size);
   font-weight: var(--font-light);
 
+  letter-spacing: 3px;
   margin-bottom: var(--mb-0-75);
 }
 
